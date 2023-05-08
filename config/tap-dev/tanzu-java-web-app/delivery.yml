@@ -8,6 +8,7 @@ metadata:
   labels:
     app.kubernetes.io/part-of: tanzu-java-web-app
     app.tanzu.vmware.com/deliverable-target: prod
+    apps.tanzu.vmware.com/act-tests: "true"
     apps.tanzu.vmware.com/has-tests: "true"
     apps.tanzu.vmware.com/workload-type: server
     app.kubernetes.io/component: run
@@ -18,6 +19,7 @@ spec:
       app.kubernetes.io/component: run
       app.kubernetes.io/part-of: tanzu-java-web-app
       app.tanzu.vmware.com/deliverable-target: prod
+      apps.tanzu.vmware.com/act-tests: "true"
       apps.tanzu.vmware.com/auto-configure-actuators: "false"
       apps.tanzu.vmware.com/has-tests: "true"
       apps.tanzu.vmware.com/workload-type: server
@@ -48,6 +50,7 @@ spec:
         app.kubernetes.io/component: run
         app.kubernetes.io/part-of: tanzu-java-web-app
         app.tanzu.vmware.com/deliverable-target: prod
+        apps.tanzu.vmware.com/act-tests: "true"
         apps.tanzu.vmware.com/auto-configure-actuators: "false"
         apps.tanzu.vmware.com/has-tests: "true"
         apps.tanzu.vmware.com/workload-type: server
@@ -90,6 +93,7 @@ metadata:
   labels:
     app.kubernetes.io/part-of: tanzu-java-web-app
     app.tanzu.vmware.com/deliverable-target: prod
+    apps.tanzu.vmware.com/act-tests: "true"
     apps.tanzu.vmware.com/has-tests: "true"
     apps.tanzu.vmware.com/workload-type: server
     app.kubernetes.io/component: run
@@ -99,6 +103,7 @@ spec:
     app.kubernetes.io/component: run
     app.kubernetes.io/part-of: tanzu-java-web-app
     app.tanzu.vmware.com/deliverable-target: prod
+    apps.tanzu.vmware.com/act-tests: "true"
     apps.tanzu.vmware.com/auto-configure-actuators: "false"
     apps.tanzu.vmware.com/has-tests: "true"
     apps.tanzu.vmware.com/workload-type: server
