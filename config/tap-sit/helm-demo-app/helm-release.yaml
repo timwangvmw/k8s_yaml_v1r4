@@ -25,6 +25,7 @@ spec:
       minReplicas: 3
     service:
       type: LoadBalancer
+    serviceAccount: workload-sa
     image:
       repository: harbor.lab.tw/tap-ap/helm-demo-app-tap-sit@sha256:f5992b47f4680773e3b4f648bc509ee0ab245f24066efdb3d6cf017d7366df6f
 
