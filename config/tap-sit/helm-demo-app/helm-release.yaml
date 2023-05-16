@@ -21,10 +21,10 @@ spec:
       remediateLastFailure: true
   values:
     autoscaling:
-      enabled: true
-      minReplicas: 2
+      enabled: false
+      minReplicas: 1
     service:
-      type: LoadBalancer
+      type: ClusterIP
     serviceAccount:
       create: false
       name: workload-sa
