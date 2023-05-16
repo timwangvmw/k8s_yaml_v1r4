@@ -22,7 +22,7 @@ spec:
   values:
     autoscaling:
       enabled: true
-      minReplicas: 3
+      minReplicas: 2
     service:
       type: LoadBalancer
     serviceAccount:
