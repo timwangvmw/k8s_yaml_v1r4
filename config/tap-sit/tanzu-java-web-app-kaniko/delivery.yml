@@ -40,7 +40,7 @@ spec:
         carto.run/workload-name: tanzu-java-web-app-kaniko
     spec:
       containers:
-      - image: harbor.lab.tw/tap-ap/tanzu-java-web-app-kaniko-tap-sit@sha256:a899192d864e6ba49e7bb6506221e46361c9a9ede22825166da667daf7487c0a
+      - image: harbor.lab.tw/tap-ap/tanzu-java-web-app-kaniko-tap-sit@sha256:449c3bb65a5183b1849746d4a299a9fb5c4f2dcee39a064f104e248ce0126693
         name: workload
         resources: {}
         securityContext:
