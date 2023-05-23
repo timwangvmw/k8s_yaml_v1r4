@@ -31,7 +31,7 @@ spec:
   template:
     metadata:
       annotations:
-        boot.spring.io/version: 2.7.4
+        boot.spring.io/version: 3.0.5
         conventions.carto.run/applied-conventions: |-
           appliveview-sample/app-live-view-appflavour-check
           spring-boot-convention/auto-configure-actuators-check
@@ -45,7 +45,7 @@ spec:
           spring-boot-convention/app-live-view-appflavours-boot
         developer.conventions/target-containers: workload
         kubectl.kubernetes.io/last-applied-configuration: |
-          {"apiVersion":"carto.run/v1alpha1","kind":"Workload","metadata":{"annotations":{},"labels":{"app.kubernetes.io/part-of":"tanzu-java-web-app","apps.tanzu.vmware.com/act-tests":"true","apps.tanzu.vmware.com/has-tests":"true","apps.tanzu.vmware.com/workload-type":"server"},"name":"tanzu-java-web-app","namespace":"tap-sit"},"spec":{"params":[{"name":"scanning_source_policy","value":"scan-policy"},{"name":"actest-namespace","value":"tap-delivery"},{"name":"testing_pipeline_matching_labels","value":{"apps.tanzu.vmware.com/pipeline":"vmware-approvaltask"}},{"name":"integration_testing_matching_labels","value":{"apps.tanzu.vmware.com/pipeline":"int-test"}}],"source":{"git":{"ref":{"branch":"dev"},"url":"https://github.com/timwangvmw/tanzu-java-web-app133.git"}}}}
+          {"apiVersion":"carto.run/v1alpha1","kind":"Workload","metadata":{"annotations":{},"labels":{"app.kubernetes.io/part-of":"tanzu-java-web-app","apps.tanzu.vmware.com/act-tests":"true","apps.tanzu.vmware.com/has-tests":"true","apps.tanzu.vmware.com/workload-type":"server"},"name":"tanzu-java-web-app","namespace":"tap-sit"},"spec":{"build":{"env":[{"name":"BP_JVM_VERSION","value":"17"}]},"params":[{"name":"clusterBuilder","value":"tim"},{"name":"scanning_source_policy","value":"scan-policy"},{"name":"actest-namespace","value":"tap-delivery"},{"name":"testing_pipeline_matching_labels","value":{"apps.tanzu.vmware.com/pipeline":"vmware-approvaltask"}},{"name":"integration_testing_matching_labels","value":{"apps.tanzu.vmware.com/pipeline":"int-test"}}],"source":{"git":{"ref":{"branch":"dev"},"url":"https://github.com/timwangvmw/tanzu-java-web-app133.git"}}}}
       labels:
         app.kubernetes.io/component: run
         app.kubernetes.io/part-of: tanzu-java-web-app
@@ -65,7 +65,7 @@ spec:
       - env:
         - name: JAVA_TOOL_OPTIONS
           value: -Dmanagement.endpoint.health.probes.add-additional-paths="true" -Dmanagement.health.probes.enabled="true" -Dserver.port="8080" -Dserver.shutdown.grace-period="24s"
-        image: harbor.lab.tw/tap-ap/tanzu-java-web-app-tap-sit@sha256:d16c97f7eff0831cbfbc5390fb6aa7ede0fc09163fed81d6a3229f8d0ea82db2
+        image: harbor.lab.tw/tap-ap/tanzu-java-web-app-tap-sit@sha256:b115e619af00fef75a6ab906d7f62f2758535c4e63b522681c682473f8509e84
         livenessProbe:
           httpGet:
             path: /livez
