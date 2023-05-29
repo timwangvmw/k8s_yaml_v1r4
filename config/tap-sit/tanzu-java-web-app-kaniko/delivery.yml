@@ -46,8 +46,6 @@ spec:
         image: harbor.lab.tw/tap-ap/tanzu-java-web-app-kaniko-tap-sit@sha256:0d0f198553f7704b968069ab6861879e0eb3e07cd3dc953bd66952ac25a9343b
         name: workload
         resources: {}
-        securityContext:
-          runAsUser: 1000
       serviceAccountName: workload-sa
 ---
 apiVersion: v1
