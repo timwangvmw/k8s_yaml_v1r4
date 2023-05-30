@@ -11,23 +11,16 @@ spec:
   interval: 5m
   chart:
     spec:
-      chart: java-web-app
+      chart: tap
       sourceRef:
         kind: HelmRepository
-        name: demo-repo
+        name: timwang-github
       interval: 1m
   upgrade:
     remediation:
       remediateLastFailure: true
   values:
-    autoscaling:
-      enabled: false
-      minReplicas: 1
-    service:
-      type: ClusterIP
-    serviceAccount:
-      create: false
-      name: workload-sa
+    workloadname: helm-demo-app
     image:
-      repository: harbor.lab.tw/tap-ap/helm-demo-app-tap-sit@sha256:f5992b47f4680773e3b4f648bc509ee0ab245f24066efdb3d6cf017d7366df6f
+      repository: harbor.lab.tw/tap-ap/helm-demo-app-tap-sit@sha256:39f2abf7b422661a1edee6aee4fb48cf0af3f032a17d1d1dd5881ff6e38ec675
 
