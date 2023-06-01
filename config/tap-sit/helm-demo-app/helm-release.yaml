@@ -5,6 +5,7 @@ metadata:
   namespace: tap-sit
   labels:
     app.kubernetes.io/part-of: helm-demo-app
+    apps.tanzu.vmware.com/has-tests: "true"
     app.kubernetes.io/component: helm-release
     app.tanzu.vmware.com/release-type: helm
 spec:
@@ -22,5 +23,5 @@ spec:
   values:
     workloadname: helm-demo-app
     image:
-      repository: harbor.lab.tw/tap-ap/helm-demo-app-tap-sit@sha256:dd77a85cdd144d679abdbc5870f2d119c6de7a9b1d53546419d40b678c4dcf96
+      repository: harbor.lab.tw/tap-ap/helm-demo-app-tap-sit@sha256:50fc919eab096ab11a485765f1af630b59f52f1b52f10289b0397ad326f43d4a
 
