@@ -22,5 +22,5 @@ spec:
   values:
     workloadname: helm-demo-app
     image:
-      repository: harbor.lab.tw/tap-ap/helm-demo-app-tap-sit@sha256:39f2abf7b422661a1edee6aee4fb48cf0af3f032a17d1d1dd5881ff6e38ec675
+      repository: harbor.lab.tw/tap-ap/helm-demo-app-tap-sit@sha256:2ff10d209f6600d7c6629c2bab0441eafd9990249a1cf3d733e87c03229722a5
 
