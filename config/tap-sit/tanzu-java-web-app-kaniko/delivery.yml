@@ -47,7 +47,7 @@ spec:
         name: workload
         resources: {}
         securityContext:
-          runAsUser: 1000
+          runAsUser: 999
       serviceAccountName: workload-sa
 ---
 apiVersion: v1
