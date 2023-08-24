@@ -43,7 +43,7 @@ spec:
       - env:
         - name: JAVA_TOOL_OPTIONS
           value: -javaagent:/var/tmp/elastic-apm-agent-1.38.1-20230512.153148-12.jar -Delastic.apm.application_packages="org.example,org.another.example" -Delastic.apm.server_url="http://127.0.0.1:8200" -Delastic.apm.service_name="my-cool-service"
-        image: harbor.lab.tw/tap-ap/tanzu-java-web-app-kaniko-tap-sit@sha256:5e8f4c25e87851d1819f59af93288d0cd77c4741490b61b5b059959940cda1db
+        image: harbor-prod.lab.tw/tap-ap/tanzu-java-web-app-kaniko-tap-sit@sha256:5e8f4c25e87851d1819f59af93288d0cd77c4741490b61b5b059959940cda1db
         name: workload
         resources: {}
         securityContext:
