@@ -13,7 +13,7 @@ metadata:
     app.kubernetes.io/component: run
     carto.run/workload-name: tanzu-java-web-app
 spec:
-  replicas: 1
+  replicas: 3
   selector:
     matchLabels:
       app.kubernetes.io/component: run
